@@ -1,0 +1,143 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (min-width: 1280px) {
+    .main-block{
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .header-block{
+        max-width: 1350px;
+        width: 100%;
+    }
+}
+
+
+body{
+    color: #000000;
+}
+
+input{
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    border-radius: 5px;
+    outline: none;
+    padding: 23px;
+    
+}
+
+textarea{
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    border-radius: 5px;
+    outline: none;
+    padding: 23px;
+    resize: none;
+}
+
+.rocketplugins{
+    margin-left: 12.5rem;
+}
+
+.devroom{
+    margin-right: 13.75rem;
+}
+
+@media  screen  and (max-width: 480px) {
+    .rocketplugins{
+        margin: 0 !important;
+    }
+    
+    .devroom{
+        margin-right: 0.5rem;
+        
+    }
+
+    .form {
+        border: 0 !important;
+    }
+}
+
+.portfolioImage{
+    width: 100%;
+}
+
+.templateMinecraft{
+    width: 100%;
+}
+
+.click:hover #slide {
+    transition: 1s;
+    right: 0;
+}
+
+.form {
+    border: 1px solid rgba(128, 128, 128, 0.5); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.nav-open {
+    animation-name: open;
+    animation-duration: 1s;
+    margin-left: 0;
+}
+
+.nav-close {
+    animation-name: close;
+    animation-duration: 1s;
+    margin-left: 100vw;
+}
+
+@keyframes close {
+    from {  margin-left: 0;}
+    to { margin-left: 100vw;}
+}
+
+@keyframes open {
+    from { margin-left: 100vw;}
+    to {  margin-left: 0;}
+}
