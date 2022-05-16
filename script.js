@@ -1,5 +1,6 @@
 let menu = document.querySelector('#menu')
 let button = document.querySelector('#button')
+let buttonDiv = document.querySelector("#button-div")
 
 function isOpen() {
     return menu.classList.contains("nav-open");
@@ -11,6 +12,8 @@ function openMenu(){
 
     menu.classList.remove("nav-close");
     menu.classList.add("nav-open");
+
+    buttonDiv.classList.add("fixed");
 }
 
 function closeMenu(){
@@ -19,6 +22,8 @@ function closeMenu(){
 
     menu.classList.remove("nav-open");
     menu.classList.add("nav-close");
+
+    buttonDiv.classList.remove("fixed");
 }
 
 $("form").submit(function (event) {

@@ -21,14 +21,13 @@
             <a href="#contacts" onclick="closeMenu()">Contact</a>
         </div>
     </div>
-    </div>
     <div class="w-full" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);">
-        <div class="flex justify-between relative header-block pb-[20px] pt-[20px] pr-[25px] pl-[25px] xl:pr-0 xl:pl-0 m-[auto]">
+        <div class="flex justify-between relative header-block pb-[20px] pt-[20px] pr-[25px] pl-[25px] xl:pr-0 xl:pl-0 m-[auto]" style="max-height: 90px;">
             <div class="">
-                <img src="images/logo.png" alt="">
+                <img src="images/logo.png" alt="" style="width: 100px; margin-top: 5px; margin-bottom: 5px;">
             </div>
-            <div class="flex items-center xl:hidden">
-                <button id="button" class="menu" onclick="isOpen() ? closeMenu() : openMenu()" aria-label="Main Menu" style="z-index: 999;">
+            <div class="flex items-center xl:hidden right-[25px] " style="z-index: 999; top: 15px;" id="button-div">
+                <button id="button" class="menu" onclick="isOpen() ? closeMenu() : openMenu()" aria-label="Main Menu">
                     <svg width="60" height="60" viewBox="0 0 100 100" style="filter: invert(64%) sepia(45%) saturate(6213%) hue-rotate(206deg) brightness(94%) contrast(96%);">
                         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                         <path class="line line2" d="M 20,50 H 80" />
@@ -160,13 +159,13 @@
             <div class="main-block m-[auto] p-[25px] flex-col xl:flex-row gap-[20px] xl:gap-0 w-full xl:p-0 flex justify-between font-[Roboto] text-[#fff]">
                 <span class="text-[16px] font-[400]">© 2022 Michele Manna. All rights reserved</span>
                 <div class="flex items-center gap-[5px]">
-                    <img src="images/mail.png" alt="">
+                    <img src="images/mail.png" alt="" style=" width: 25px">
                     <span class="text-[16px] font-[400]">hello@michelemanna.me</span>
                 </div>
                 <div class="flex items-center gap-[20px] xl:gap-[48px]">
                     <a href="https://discord.gg/TX5bMaD3"><img src="images/discord.png" alt="" width="40px"></a>
-                    <a href="https://mobile.twitter.com/Michelo117"><img src="images/twitter-footer.png" alt=""></a>
-                    <a href="https://github.com/Michelo11"><img src="images/github-footer.png" alt=""></a>
+                    <a href="https://mobile.twitter.com/Michelo117"><img src="images/twitter-footer.png" alt="" style="width: 35px"></a>
+                    <a href="https://github.com/Michelo11"><img src="images/github-footer.png" alt="" style="width: 35px"></a>
                 </div>
             </div>
         </div>
